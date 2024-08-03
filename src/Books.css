@@ -1,0 +1,30 @@
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.books-item {
+    border: 1px solid #323232;
+    padding: 20px;
+    background-color: #c6c6c6;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.books-item:hover {
+    transform: translateY(-5px);
+    background-color: #00A980;
+    color: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.quote-text {
+    margin-top: 10px;
+    font-style: italic;
+}

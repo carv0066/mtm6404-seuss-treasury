@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import BooksPage from './pages/BooksPage';
+import QuotesPage from './pages/QuotesPage';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<div>Welcome to Seuss Treasury</div>} />
         <Route path="/books" element={<BooksPage />} />
-
+        <Route path="/quotes" element={<QuotesPage />} />
       </Routes>
     </div>
   );

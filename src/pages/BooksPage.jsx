@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ItemForBook from '../components/ItemForBook';
-
+import '../Books.css';
 
 function BooksPage() {
     const [books, setBooks] = useState([]);
@@ -16,7 +16,7 @@ function BooksPage() {
           setLoading(false);
         })
         .catch(error => {
-          console.error('Error fetching books:', error);
+          console.error('Error fetching the books:', error);
           setError('Failed to load books');
           setLoading(false);
         });
@@ -40,7 +40,7 @@ function BooksPage() {
               </div>
             ))
           ) : (
-            <p>No books available.</p>
+            <p>No are books available.</p>
           )}
         </div>
       </div>
